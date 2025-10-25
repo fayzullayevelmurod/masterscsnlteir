@@ -1,0 +1,17 @@
+@import
+    './vendors/normalize',
+    './abstracts/mixins',
+    './abstracts/variables',
+    './abstracts/media',
+    './base/grid',
+    './base/globals';
+
+@import
+    './layout/header',
+    './layout/home',
+    './layout/form-tel',
+    './layout/cards',
+    './layout/work',
+    './layout/comment',
+    './layout/training',
+    './layout/footer';
