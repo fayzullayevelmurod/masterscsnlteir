@@ -8,6 +8,10 @@
     justify-content: center;
     gap: 25px;
 
+    @include media('sm') {
+      display: none;
+    }
+
     a {
       font-family: $font-Montserrat;
       font-weight: 700;
@@ -16,6 +20,45 @@
       text-align: center;
       text-transform: uppercase;
       color: $color-white;
+    }
+  }
+
+  .burger {
+    width: 32px;
+    height: 32px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7px;
+
+    @include media('sm') {
+      display: flex;
+      margin-left: auto;
+    }
+
+    span {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background: $color-white;
+      transition: .3s ease;
+    }
+
+    &.active {
+      .center {
+        @include media('sm') {
+          display: none;
+        }
+      }
+
+      .one {
+        transform: rotate(45deg) translateY(3px) translateX(3px);
+      }
+
+      .two {
+        transform: rotate(-45deg) translateY(-3px) translateX(3px);
+      }
     }
   }
 }
@@ -75,12 +118,18 @@
   height: 100%;
   background: rgba(0,0,0,.6);
   z-index: 6;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: .3s ease;
 
   &.active {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
   }
 
   &_close {

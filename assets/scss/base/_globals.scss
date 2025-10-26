@@ -204,10 +204,15 @@ p, h1, h2, h3, h4, h5, h6 {
   height: 100%;
   z-index: 5;
   background: rgba(0,0,0,.6);
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   overflow-y: scroll;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(15px);
+  transition: .3s ease;
+
 
   &::-webkit-scrollbar {
     display: none;
@@ -228,7 +233,9 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 
   &.active {
-    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
   }
 
   &_close {

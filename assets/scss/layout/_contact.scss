@@ -1,0 +1,72 @@
+// contact
+.contact {
+  padding: 30px 0;
+
+  h6 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 31px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    margin-bottom: 20px;
+
+    @include media('md') {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    padding: 15px 20px;
+    border: 1px solid $color-white;
+    background: #EB0000;
+    border-radius: 15px;
+
+    @include media('lg') {
+      gap: 12px;
+    }
+
+    @include media('md') {
+      grid-template-columns: repeat(1,1fr);
+    }
+
+    input {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 100%;
+      color: $color-dark;
+      border-radius: 15px;
+      border: 1px solid $color-dark;
+      background: $color-white;
+      padding: 10px 20px;
+
+      @include media('md') {
+        height: 40px;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+    }
+
+    button {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 100%;
+      text-align: center;
+      color: #F9B2B2;
+      background: #470000;
+      border-radius: 15px;
+      height: 60px;
+
+      @include media('md') {
+        height: 40px;
+        border-radius: 5px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+// contact
