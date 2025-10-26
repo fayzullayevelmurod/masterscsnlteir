@@ -410,16 +410,16 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .section_title {
   font-weight: 700;
-  font-size: 45.51px;
-  line-height: 78px;
-  color: #FFFFFF;
+  font-size: 42px;
+  line-height: 51.66px;
   text-align: center;
-  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 40px;
 }
 @media (max-width: 768px) {
   .section_title {
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 22px;
+    line-height: 26px;
   }
 }
 
@@ -1340,183 +1340,68 @@ p, h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.comment {
-  padding: 20px 0 105px 0;
-  background: linear-gradient(234.81deg, #000000 76%, #47EE9A 100%);
+.training {
+  padding: 30px 0;
 }
-.comment .section_title {
-  margin-bottom: 45px;
-}
-.comment_slider {
-  position: relative;
-}
-.comment .comment_btn {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-}
-@media (max-width: 768px) {
-  .comment .comment_btn {
-    width: 24px;
-    height: 24px;
-  }
-}
-.comment .comment_btn_prev {
-  position: absolute;
-  left: -30px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-.comment .comment_btn_next {
-  position: absolute;
-  right: -30px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-.comment .swiper-button-disabled {
-  opacity: 50%;
-}
-.comment .commentSwiper .comment-pagination {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 30px;
-}
-.comment .commentSwiper .comment-pagination .swiper-pagination-bullet {
-  background: #FFFFFF;
-  transition: 0.3s ease;
-  opacity: 1;
-}
-.comment .commentSwiper .comment-pagination .swiper-pagination-bullet-active {
-  background: #222222;
-}
-.comment_card {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.training_in {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
-  height: auto;
 }
 @media (max-width: 768px) {
-  .comment_card {
-    gap: 25px;
+  .training_in {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
-.comment_card img {
-  width: 150px;
-  height: 150px;
+@media (max-width: 640px) {
+  .training_in {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+}
+.training_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 640px) {
+  .training_block {
+    gap: 15px;
+  }
+}
+.training_block img {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.comment_card p {
-  max-width: 628px;
-  font-weight: 400;
-  font-size: 17.66px;
-  line-height: 31px;
-  text-align: center;
-  color: #FFFFFF;
-}
-@media (max-width: 768px) {
-  .comment_card p {
-    font-size: 14px;
-    line-height: 23px;
-  }
-}
-.comment_card h6 {
+.training_block h6 {
   font-weight: 700;
-  font-size: 20.63px;
-  line-height: 29.7px;
+  font-size: 16px;
+  line-height: 21.6px;
   text-align: center;
-  color: #47EE9A;
+  color: #FFFFFF;
 }
 @media (max-width: 768px) {
-  .comment_card h6 {
-    font-size: 16px;
-    line-height: 24px;
+  .training_block h6 {
+    font-size: 12px;
+    line-height: 14px;
   }
 }
-.comment_card span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
+.training_block p {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 21.7px;
+  font-size: 15px;
+  line-height: 23.25px;
   text-align: center;
   color: #FFFFFF;
 }
-.comment_name {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 100%;
-}
-.comment .stars {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-}
-.comment .stars svg {
-  width: 15px;
-  height: 15px;
-}
-.comment .stars svg path {
-  fill: #FFFFFF;
-}
-
-.training {
-  padding: 20px 0 200px 0;
-}
 @media (max-width: 768px) {
-  .training {
-    padding: 20px 0 80px 0;
-  }
-}
-.training .section_title {
-  margin-bottom: 30px;
-}
-.training ul {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  max-width: 788px;
-  margin: auto;
-}
-@media (max-width: 768px) {
-  .training ul {
-    gap: 10px;
-  }
-}
-.training ul li {
-  background: linear-gradient(99.37deg, #000000 0%, #47EE9A 100%);
-  border-radius: 20px;
-  border: 2px solid #FFFFFF;
-  padding: 20px;
-}
-@media (max-width: 768px) {
-  .training ul li {
-    padding: 24px;
-    background: linear-gradient(119.66deg, #000000 0%, #47EE9A 100%);
-  }
-}
-.training ul span {
-  font-weight: 700;
-  font-size: 22.85px;
-  line-height: 39px;
-  text-align: center;
-  color: #FFFFFF;
-  display: block;
-}
-@media (max-width: 768px) {
-  .training ul span {
-    font-size: 18px;
-    line-height: 26px;
+  .training_block p {
+    font-size: 12px;
+    line-height: 18px;
   }
 }
 
